@@ -1,0 +1,34 @@
+<!DOCTYPE html>           <!-- diz ao navegador que e' HTML5 -->
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  <!-- acentos funcionam corretamente -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana Academica de Historia</title>
+  <link rel="stylesheet" href="estilo.css">  <!-- importa o CSS -->
+</head>
+<body>
+  <header>
+    <h1>Semana Academica de Historia</h1>
+    <p>Confira a programacao completa do evento</p>
+  </header>
+
+  <main>
+    <!-- Esta tabela comeca vazia; o JavaScript vai preenche-la -->
+    <table id="tabela-cronograma">
+      <thead>
+        <tr>
+          <th>Data e Hora</th>
+          <th>Titulo</th>
+          <th>Palestrante</th>
+          <th>Onde / Como participar</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-cronograma">
+        <!-- linhas inseridas dinamicamente aqui -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="cronograma.js"></script>  <!-- importa o JavaScript -->
+</body>
+</html>

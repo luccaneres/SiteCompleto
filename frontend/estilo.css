@@ -1,0 +1,43 @@
+
+/* Aparencia geral da pagina */
+body {
+  font-family: Arial, sans-serif;   /* fonte limpa e legivel */
+  margin: 0;
+  background-color: #F2F5F3;          /* cinza bem claro de fundo */
+  color: #222;
+}
+
+/* Cabecalho com a cor institucional */
+header {
+  background-color: #004823;          /* verde FAG */
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+/* A tabela do cronograma ocupa quase toda a largura, centralizada */
+table {
+  width: 90%;
+  margin: 24px auto;                  /* centraliza horizontalmente */
+  border-collapse: collapse;          /* junta as bordas das celulas */
+  background: white;
+}
+
+/* Celulas com espacamento e linha separadora */
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Cabecalho da tabela destacado */
+th {
+  background-color: #004823;
+  color: white;
+}
+
+/* Listras alternadas facilitam a leitura (zebra striping) */
+tr:nth-child(even) { background-color: #E8F5E9; }
+
+/* Destaque visual para eventos remotos (link clicavel verde) */
+a { color: #E31E24; font-weight: bold; }

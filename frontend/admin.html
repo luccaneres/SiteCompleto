@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Administracao - Semana de Historia</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header><h1>Area do Organizador</h1></header>
+  <main>
+    <!-- AREA 1: login (visivel no inicio) -->
+    <section id="area-login">
+      <h2>Entrar</h2>
+      <input id="usuario" placeholder="Usuario">
+      <input id="senha" type="password" placeholder="Senha">
+      <button onclick="fazerLogin()">Entrar</button>
+      <p id="msg-login"></p>
+    </section>
+
+    <!-- AREA 2: cadastro (escondida ate' o login dar certo) -->
+    <section id="area-cadastro" style="display:none;">
+      <h2>Cadastrar evento</h2>
+      <input id="titulo" placeholder="Titulo">
+      <input id="palestrante" placeholder="Palestrante">
+      <input id="local" placeholder="Local (se presencial)">
+      <input id="link" placeholder="Link (se remoto)">
+      <!-- input do tipo datetime-local: seletor de data e hora nativo -->
+      <input id="data_hora" type="datetime-local">
+      <button onclick="cadastrarEvento()">Salvar evento</button>
+      <p id="msg-cadastro"></p>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
